@@ -1,0 +1,17 @@
+.main {
+
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+  .sidebar {
+    width: 420px;
+    background-color: rgb(238, 243, 247);
+    padding: 16px;
+  }
+
+  .context {
+    background-color: rgb(247, 247, 247);
+    width: calc(100% - 420px);
+  }
+}

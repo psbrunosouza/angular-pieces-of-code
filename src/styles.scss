@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+
+  h1 {
+    font: var(--tui-font-heading-4);
+    margin: 16px 0 8px 0;
+    padding: 0;
+  }
+  h2 {
+    font: var(--tui-font-heading-6);
+    margin: 8px 0;
+    padding: 0;
+  }
+  p {
+    font: var(--tui-font-text-l-2);
+    margin: 8px 0;
+    padding: 0;
+  }
+
+  .main {
+    .context {
+      padding: 42px;
+    }
+  }
+
+
+}
