@@ -5,9 +5,9 @@ const routes: Routes = [
   {
     path: 'component-comunication',
     loadChildren: () =>
-      import('./component-comunication/chart/chart.module').then(
-        (m) => m.ChartModule
-      ),
+      import(
+        './component-comunication/component-comunication-father/component-comunication-father.module'
+      ).then((m) => m.ComponentComunicationFatherModule),
   },
 ];
 

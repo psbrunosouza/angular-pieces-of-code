@@ -4,14 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   TUI_SANITIZER,
   TuiAlertModule,
-  TuiDialogModule,
-  TuiRootModule,
+  TuiDialogModule, TuiModeModule,
+  TuiRootModule, TuiThemeNightModule,
 } from '@taiga-ui/core';
 import { TuiTreeModule } from '@taiga-ui/kit';
 import { NgDompurifySanitizer } from '@tinkoff/ng-dompurify';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {HighlightJsModule} from "ngx-highlight-js";
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,9 @@ import { AppComponent } from './app.component';
     TuiDialogModule,
     TuiAlertModule,
     TuiTreeModule,
+    HighlightJsModule,
+    TuiThemeNightModule,
+    TuiModeModule
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent],
